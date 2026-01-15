@@ -1,0 +1,16 @@
+server.name: kibana
+server.host: 0.0.0.0
+server.port: 5601
+
+elasticsearch.hosts:
+  - http://localhost:9200
+
+elasticsearch.username: kibana_system
+elasticsearch.password: ${KibanaPassword}
+
+telemetry.optIn: false
+xpack.encryptedSavedObjects.encryptionKey: b35f5cc9ccae62bdd97a9ee6b2778668
+xpack.fleet.enabled: false
+xpack.reporting.encryptionKey: c4a22e95cc7e3bd03ab7a976c3c7d82c
+xpack.security.encryptionKey: 9fef9e525bc47f7a3e5e51efb8039d5d
+xpack.securitySolution.enabled: false

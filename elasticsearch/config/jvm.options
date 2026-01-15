@@ -1,0 +1,7 @@
+-Xms256m
+-Xmx512m
+-XX:+UseG1GC
+-XX:G1HeapRegionSize=16m
+-XX:InitiatingHeapOccupancyPercent=35
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:HeapDumpPath=logs

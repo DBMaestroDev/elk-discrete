@@ -1,0 +1,20 @@
+api.http.host: 0.0.0.0
+api.http.port: 9600
+
+node.name: logstash
+
+# Pipeline configuration - path.config DON't use this
+#path.config: ${PATH}\\logstash\\config
+pipeline.workers: 1
+pipeline.batch.size: 25
+pipeline.batch.delay: 250
+queue.type: memory
+queue.max_bytes: 50mb
+
+# Path settings
+path.logs: "${PATH}\\logstash\\logs"
+path.data: "${PATH}\\logstash\\data"
+
+# Monitoring
+monitoring.enabled: false
+xpack.monitoring.enabled: false

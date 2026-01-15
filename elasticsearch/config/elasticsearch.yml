@@ -1,0 +1,22 @@
+---
+## Default Elasticsearch configuration from Elasticsearch base image.
+## https://github.com/elastic/elasticsearch/blob/main/distribution/docker/src/docker/config/elasticsearch.yml
+#
+cluster.name: elasticsearch-cluster
+node.name: "elasticsearch-node-1"
+network.host: 0.0.0.0
+http.port: 9200
+# Single node discovery
+discovery.type: single-node
+
+xpack.license.self_generated.type: basic
+xpack.security.enabled: true
+
+path.data: "${PATH}\\elasticsearch\\data"
+path.logs: "${PATH}\\elasticsearch\\logs"
+
+
+# Windows memory optimization
+bootstrap.memory_lock: false
+indices.fielddata.cache.size: 10%
+indices.breaker.total.limit: 80%

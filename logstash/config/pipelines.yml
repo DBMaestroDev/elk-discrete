@@ -1,0 +1,32 @@
+# List of pipelines to be loaded by Logstash
+
+- pipeline.id: import_scripts
+  pipeline.workers: 1
+  path.config: "${PATH}\\logstash\\pipeline\\import_scripts_info.conf"
+- pipeline.id: import_activity
+  pipeline.workers: 1
+  path.config: "${PATH}\\logstash\\pipeline\\import_activity_info.conf"
+- pipeline.id: import_leadtime
+  pipeline.workers: 1
+  path.config: "${PATH}\\logstash\\pipeline\\import_leadtime_info.conf"
+- pipeline.id: import_deployments
+  pipeline.workers: 1
+  path.config: "${PATH}\\logstash\\pipeline\\import_deployment_info.conf"
+- pipeline.id: import_restore_time
+  pipeline.workers: 1
+  path.config: "${PATH}\\logstash\\pipeline\\import_restore_time.conf" 
+- pipeline.id: import_todo_info
+  pipeline.workers: 1
+  path.config: "${PATH}\\logstash\\pipeline\\import_todo_info.conf" 
+- pipeline.id: import_transition_time
+  pipeline.workers: 1
+  path.config: "${PATH}\\logstash\\pipeline\\import_transitiontime_info.conf"   
+- pipeline.id: import_policies
+  pipeline.workers: 1
+  path.config: "${PATH}\\logstash\\pipeline\\import_policies_info.conf"   
+- pipeline.id: import_drifts
+  pipeline.workers: 1
+  path.config: "${PATH}\\logstash\\pipeline\\import_drifts_info.conf"  
+- pipeline.id: import_objects
+  pipeline.workers: 1
+  path.config: "${PATH}\\logstash\\pipeline\\import_objects_info.conf"   
